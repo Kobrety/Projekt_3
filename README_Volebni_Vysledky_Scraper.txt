@@ -64,7 +64,7 @@ python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnu
 ```
 
 ### Průběh stahování:
-Po spuštění skriptu se stáhnou data a uloží do souboru `vysledky_hodonin.csv`.
+Po spuštění skriptu se stáhnou data a uloží do souboru `vysledky_brno.csv`.
 
 ```bash
 Downloading data from selected URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=11&xnumnuts=6205
