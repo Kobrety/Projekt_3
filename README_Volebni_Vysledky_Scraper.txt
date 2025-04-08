@@ -68,7 +68,7 @@ Po spuštění skriptu se stáhnou data a uloží do souboru `vysledky_brno.csv`
 
 ```bash
 Downloading data from selected URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=11&xnumnuts=6205
-Saving data to file: vysledky_hodonin.csv
+Saving data to file: vysledky_brno.csv
 All done, closing...
 ```
 
