@@ -1,4 +1,3 @@
-
 # Volební výsledky - Scraper
 
 ## Popis projektu
@@ -9,29 +8,29 @@ Tento Python skript slouží k extrahování volebních výsledků z webu [www.v
 
 Knihovny, které jsou použity v kódu, jsou uložené v souboru `requirements.txt`. Pro instalaci doporučuji použít virtuální prostředí. Následuj tyto kroky pro instalaci:
 
-### Vytvoření virtuálního prostředí:
+1. **Vytvoření virtuálního prostředí:**
 
-Pokud ještě nemáš virtuální prostředí pro Python, vytvoř ho pomocí následujících příkazů.
+   Pokud ještě nemáš virtuální prostředí pro Python, vytvoř ho pomocí následujících příkazů.
 
-#### Windows:
-```bash
-python -m venv myenv
-myenv\Scriptsctivate
-```
+   ### Windows:
+   ```bash
+   python -m venv myenv
+   myenv\Scripts\activate
+   ```
 
-#### macOS / Linux:
-```bash
-python3 -m venv myenv
-source myenv/bin/activate
-```
+   ### macOS / Linux:
+   ```bash
+   python3 -m venv myenv
+   source myenv/bin/activate
+   ```
 
-### Instalace požadovaných knihoven:
+2. **Instalace požadovaných knihoven:**
 
-S aktivním virtuálním prostředím nainstaluj všechny potřebné knihovny, které jsou specifikovány v souboru `requirements.txt`. To provedeš pomocí následujícího příkazu:
-
-```bash
-pip install -r requirements.txt
-```
+   S aktivním virtuálním prostředím nainstaluj všechny potřebné knihovny, které jsou specifikovány v souboru `requirements.txt`. To provedeš pomocí následujícího příkazu:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Spuštění projektu
 
@@ -43,22 +42,20 @@ python main.py <odkaz-na-uzemni-celek> <nazev-vysledneho-souboru>
 
 ### Příklad:
 
-Pokud chceš stáhnout volební výsledky pro **Brno**, použij tento příkaz:
+Pokud chceš stáhnout volební výsledky pro obec v Středočeském kraji (Praha-východ), použij tento příkaz:
 
 ```bash
-python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnuts=5525" vysledky_brno.csv
+python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101" vysledky_praha_vychod.csv
 ```
 
-Tento příkaz stáhne výsledky pro **Brno** a uloží je do souboru `vysledky_brno.csv`.
+Tento příkaz stáhne výsledky pro specifikovanou obec a uloží je do souboru `vysledky_praha_vychod.csv`.
 
 ## Ukázka použití
 
 ### Argumenty:
-1. Odkaz na volební výsledky pro **Brno**:
-   `https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnuts=5525`
+1. Odkaz na volební výsledky pro Brno: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnuts=5525
 
-2. Název souboru pro výstup:
-   `vysledky_brno.csv`
+2. Název souboru pro výstup: vysledky_brno.csv
 
 ### Spuštění programu:
 
@@ -66,11 +63,12 @@ Tento příkaz stáhne výsledky pro **Brno** a uloží je do souboru `vysledky_
 python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnuts=5525" vysledky_brno.csv
 ```
 
-Po spuštění skriptu se stáhnou data a uloží do souboru `vysledky_brno.csv`.
+### Průběh stahování:
+Po spuštění skriptu se stáhnou data a uloží do souboru `vysledky_hodonin.csv`.
 
 ```bash
-Downloading data from selected URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=6&xnumnuts=5525
-Saving data to file: vysledky_brno.csv
+Downloading data from selected URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=11&xnumnuts=6205
+Saving data to file: vysledky_hodonin.csv
 All done, closing...
 ```
 
