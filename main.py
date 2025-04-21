@@ -1,3 +1,13 @@
+"""
+3_Project for Engeto Online Python Academy
+
+author: Michal Kolar
+email: kobracz.mkgmail.com
+"""
+
+
+
+
 import requests
 from bs4 import BeautifulSoup
 import csv
